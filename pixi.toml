@@ -1,0 +1,21 @@
+[project]
+name = "pytest-html-validator"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["tonyfast <tony.fast@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tasks]
+
+[dependencies]
+python = "3.11.*"
+vnu-validator = ">=23.4.11,<23.5"
+openjdk = ">=21.0.2,<21.1"
+
+[feature.test.dependencies]
+pytest = ">=7.2.0,<8.2"
+pytest-html = ">=1.16.0,<4.2"
+
+[build-dependencies]
+flit = ">=3.9.0,<3.10"
